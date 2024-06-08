@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    background-color: rgb(24,24,27);
+    border-bottom: 5px black;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav #logo{
+    width: 32px;
+}
+
+nav .input-checkbox{
+    display: none;
+}
+
+nav input:checked ~ aside{
+    left: 0;
+    background-color: blueviolet;
+}
+
+nav label{
+    z-index: 2;
+}
+
+nav #img-explorar{
+    width: 28px;
+}
+
+nav aside {
+    width: 100px;
+   display: flex;
+   position: absolute;
+   right: 0;
+   transition: right 1s linear;
+   background-color: blue;
+   padding: 0px 20px 15px 0px;
+   justify-content: center;
+}
+
+nav aside ul{
+    list-style: none;
+}
+
+main{
+    height: 100vh;
+    background-color: rgb(14,14,16);
+}
